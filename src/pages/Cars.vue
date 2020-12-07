@@ -1,5 +1,13 @@
 <template>
-  <h1>Cars page</h1>
+  <div>
+    <h1>Cars page</h1>
+    <ul>
+      <!-- create a list of links -->
+      <router-link tag="li" v-for="car in 5" :to="'/car/' + car" :key="car"
+        ><a>Car {{ car }}</a></router-link
+      >
+    </ul>
+  </div>
 </template>
 
 <script>

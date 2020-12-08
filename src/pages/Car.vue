@@ -17,6 +17,7 @@
         name: 'carFull',
         params: { id: id },
         query: { name: 'Mazda', year: 2000 },
+        hash: '#scroll',
       }"
       >Full info</router-link
     >

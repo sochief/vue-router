@@ -28,14 +28,14 @@ export default new VueRouter({
       ]
     },
     {
-      path: "/none",
+      path: "none",
       redirect: {
         name: "cars"
       }
     },
     {
       path: "*",
-      redirect: ErrorCmp
+      component: ErrorCmp
     }
   ],
   mode: "history",

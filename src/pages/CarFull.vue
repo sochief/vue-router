@@ -15,6 +15,11 @@ export default {
       return this.$route.query.year;
     },
   },
+  //eslint-disable-next-line
+  beforeRouteEnter(to, from, next) {
+    console.log("beforeRouteEnter");
+    next(true);
+  },
 };
 </script>
 

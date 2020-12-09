@@ -45,6 +45,15 @@ export default {
       this.id = toR.params["id"];
     },
   },
+  // eslint-disable-next-line
+  beforeRouteLeave(ro, fromR, next) {
+    if (window.confirm("Are you sure you want to leave?")) {
+      next();
+    } else {
+      next(false);
+    }
+    console.log("beforeRouteLeave");
+  },
 };
 </script>
 

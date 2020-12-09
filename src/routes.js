@@ -23,7 +23,12 @@ export default new VueRouter({
         {
           path: "full", //localhost:8080/cars/(id)/full
           component: CarFull,
-          name: "carFull"
+          name: "carFull",
+          //eslint-disable-next-line
+          beforeEnter(to, from, next) {
+            console.log("before enter");
+            next();
+          }
         }
       ]
     },
